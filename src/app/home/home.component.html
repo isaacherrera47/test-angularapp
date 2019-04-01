@@ -1,0 +1,22 @@
+<p *ngIf="homePara; else elseBlock">
+  home works!
+</p>
+
+<ng-template #elseBlock>
+  <p>The alternative</p>
+</ng-template>
+
+
+<div [ngSwitch]="homeSwitch">
+  <p *ngSwitchCase="'blue'">The blue one</p>
+  <p *ngSwitchCase="'red'">The red one</p>
+</div>
+
+
+<ul *ngFor="let color of homeFor">
+  <li>{{color}}</li>
+</ul>
+
+<div *ngFor="let post of myData$">
+  <p>{{post.title}}</p>
+</div>

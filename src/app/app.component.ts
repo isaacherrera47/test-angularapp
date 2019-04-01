@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  public btnData = '';
   title = 'angularapp';
+  clickMe() {
+    this.btnData = 'Welcome to angularapp';
+    console.log('got clicked');
+  }
 }
